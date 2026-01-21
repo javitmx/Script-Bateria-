@@ -17,7 +17,7 @@ Este script en Bash monitorea el estado de la batería en tiempo real y lanza no
 - **Prevención de Errores I/O:** Diseñado específicamente para evitar el bloqueo de particiones Btrfs.
 
 ## 📸 Demostración
-### Interfaz de Terminal (PowerShell 7 & Linux)
+### Interfaz de Terminal (Linux)
 Configuración del entorno de desarrollo con estética "Hacker Green" inspirada en CMD tradicional.
 <p align="center">
   <img src="img/demostracion.png" width="100%">
@@ -53,6 +53,6 @@ Durante el desarrollo, se diagnosticaron **6 errores de escritura y 3 de lectura
 - implementación de este script como medida de Seguridad Preventiva.
 
  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"> 
- **Desarrollado por** ***Javi*** 
+ **Desarrollado por** ***JAVITMX*** 
  Apasionado por la Ciberseguridad, Linux y la eficiencia en la administración de sistemas.
  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
