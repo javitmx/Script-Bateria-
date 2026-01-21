@@ -1,2 +1,51 @@
-# Script-Bateria-
-Es un script que monitorea el estado de la bateria del sistema operativo lanzando notificaciones cuando esta llega a niveles criticos estilo pop-ups (VENTANA EMERGENTE) Para evitar futuras corrupciones por apagados inesperados y asi salvando tu sistema operativo de fallos del disco en lectura
+# 🔋 Btrfs Battery Guard - Hyprland Notification Script
+
+![Banner](img/image.png) 
+
+## 📝 Descripción
+Este proyecto surge de una necesidad crítica de **integridad de datos**. En sistemas que utilizan el sistema de archivos **Btrfs** (como Fedora), un apagado repentino por batería baja puede provocar errores de escritura y dejar el sistema en modo "Solo lectura".
+
+Este script en Bash monitorea el estado de la batería en tiempo real y lanza notificaciones visuales críticas en entornos **Hyprland** (o cualquier gestor que use `notify-send`), permitiendo al usuario guardar su trabajo y cerrar procesos de ciberseguridad (como sesiones SSH o herramientas de pentesting) antes de un apagado forzoso.
+
+## 🛠️ Características
+- **Monitoreo en tiempo real:** Consulta directamente la interfaz del kernel en `/sys/class/power_supply/`.
+- **Alertas Críticas:** Utiliza niveles de urgencia para destacar sobre otras notificaciones.
+- **Bajo consumo:** Ejecución ligera con intervalos de espera optimizados.
+- **Prevención de Errores I/O:** Diseñado específicamente para evitar el bloqueo de particiones Btrfs.
+
+## 📸 Demostración
+### Interfaz de Terminal (PowerShell 7 & Linux)
+Configuración del entorno de desarrollo con estética "Hacker Green" inspirada en CMD tradicional.
+![Terminal](img/foto_de_la_terminal.png)
+
+### Automatización en Hyprland
+Integración del script mediante el archivo de configuración `hyprland.conf` usando `exec-once`.
+![Configuración](img/foto_del_config.png)
+
+## 🚀 Instalación y Uso
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/tu-usuario/btrfs-battery-guard.git](https://github.com/tu-usuario/btrfs-battery-guard.git)
+   cd btrfs-battery-guard
+
+2. **Dar permisos de ejecución:**
+   ``` bash
+  chmod +x alerta_bateria.sh ```
+
+3.**Configurar inicio automático en Hyprland:** 
+Añade la siguiente línea a tu ~/.config/hypr/hyprland.conf
+ ```bash
+   exec-once = ~/ruta/al/script/alerta_bateria.sh
+```  
+
+## Análisis Técnico del Problema Resuelto
+Durante el desarrollo, se diagnosticaron **6 errores de escritura y 3 de lectura** en el dispositivo /dev/sda4 tras un apagado inesperado. La solución incluyó:
+- Reparación mediante btrfs check --repair. 
+- Verificación de integridad con btrfs scrub.
+- implementación de este script como medida de Seguridad Preventiva.
+
+ <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"> 
+ **Desarrollado por** ***Javi*** 
+ Apasionado por la Ciberseguridad, Linux y la eficiencia en la administración de sistemas.
+ <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
