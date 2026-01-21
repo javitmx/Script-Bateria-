@@ -1,6 +1,9 @@
 # 🔋 Btrfs Battery Guard - Hyprland Notification Script
 
-![Banner](img/image.png) 
+
+<p align="center">
+  <img src="img/image.png" width="100%">
+</p> 
 
 ## 📝 Descripción
 Este proyecto surge de una necesidad crítica de **integridad de datos**. En sistemas que utilizan el sistema de archivos **Btrfs** (como Fedora), un apagado repentino por batería baja puede provocar errores de escritura y dejar el sistema en modo "Solo lectura".
@@ -16,11 +19,15 @@ Este script en Bash monitorea el estado de la batería en tiempo real y lanza no
 ## 📸 Demostración
 ### Interfaz de Terminal (PowerShell 7 & Linux)
 Configuración del entorno de desarrollo con estética "Hacker Green" inspirada en CMD tradicional.
-![Terminal](img/foto_de_la_terminal.png)
+<p align="center">
+  <img src="img/foto_del_popup.png" width="100%">
+</p>
 
 ### Automatización en Hyprland
 Integración del script mediante el archivo de configuración `hyprland.conf` usando `exec-once`.
-![Configuración](img/foto_del_config.png)
+<p align="center">
+  <img src="img/foto_del_popup.png" width="100%">
+</p>
 
 ## 🚀 Instalación y Uso
 
@@ -31,7 +38,7 @@ Integración del script mediante el archivo de configuración `hyprland.conf` us
 
 2. **Dar permisos de ejecución:**
    ``` bash
-  chmod +x alerta_bateria.sh ```
+   chmod +x alerta_bateria.sh
 
 3.**Configurar inicio automático en Hyprland:** 
 Añade la siguiente línea a tu ~/.config/hypr/hyprland.conf
