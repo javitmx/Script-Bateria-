@@ -20,13 +20,13 @@ Este script en Bash monitorea el estado de la batería en tiempo real y lanza no
 ### Interfaz de Terminal (PowerShell 7 & Linux)
 Configuración del entorno de desarrollo con estética "Hacker Green" inspirada en CMD tradicional.
 <p align="center">
-  <img src="img/foto_del_popup.png" width="100%">
+  <img src="img/demostracion.png" width="100%">
 </p>
 
 ### Automatización en Hyprland
 Integración del script mediante el archivo de configuración `hyprland.conf` usando `exec-once`.
 <p align="center">
-  <img src="img/foto_del_popup.png" width="100%">
+  <img src="img/automatizacion.png" width="100%">
 </p>
 
 ## 🚀 Instalación y Uso
